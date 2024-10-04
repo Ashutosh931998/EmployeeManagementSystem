@@ -1,0 +1,11 @@
+CREATE DATABASE EmployeeManagement;
+
+CREATE TABLE Employees (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    FirstName NVARCHAR(100),
+    LastName NVARCHAR(100),
+    Email NVARCHAR(100) UNIQUE,
+    Position NVARCHAR(100),
+    Salary DECIMAL(18, 2),
+    DateOfJoining DATE
+);
